@@ -1,12 +1,12 @@
 
 body {
-background-color: #9678b6;
+background-color: #44447B;
 }
 
 p{
 	color: white;
 	font-family: 'Press Start 2P', cursive;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	margin: 0;
 	text-align: center;
 }
@@ -16,16 +16,15 @@ box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.25);
 display: block;
 text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 text-align: center;
-padding: 78px 0;
+padding: 11px 0;
 color: white;
 font-family: 'Press Start 2P', cursive;
 font-size: 2.6rem;
 position: absolute;
 width: 98%;
-height: 3%;
-top: 10px;
+top: 3px;
 border-radius: 120px 120px 0 0;
-z-index: .5;
+z-index: ;
 background: #54455D;
 left: 1%;
 }
@@ -35,47 +34,27 @@ p{
 	cursor: pointer;
 	text-shadow: none;
 }
-.polygon1{
-position: absolute;
-width: 10%;
-height: 100%;
-z-index: -100;
-background: linear-gradient(-90deg, #BCBCE0 0%, #44447B 100%);
+
+span{
+  background: #685773;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.25);
+  padding: 3px 2px;
+  border-radius: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
-.polygon2{
-position: absolute;
-width: 10%;
-height: 100%;
-right: 0;
-z-index: -100;
-background: linear-gradient(90deg, #BCBCE0 0%, #44447B 100%);
+span:hover {background-color: #967bb6}
+
+span:active {
+  background-color: #967bb6;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.25);
+  transform: translateY(4px);
 }
-
-.polygon3{
-position: absolute;
-width: 94%;
-height: 10%;
-bottom: 0px;
-z-index: -100;
-border-left: 50px solid transparent;
-border-right: 50px solid transparent;
-border-bottom: 100px solid #44447B;
-}
-
-.polygon4{
-position: absolute;
-width: 94%;
-height: 10%;
-top: 0px;
-z-index: -100;
-border-left: 50px solid transparent;
-border-right: 50px solid transparent;
-border-bottom: 100px solid #44447B;
-transform: rotate(180deg)
-
-}
-
 .container{
 position: absolute;
 width: 98%;
@@ -86,12 +65,9 @@ z-index: -1;
 background: radial-gradient(50% 50% at 50% 50%, #736180 0%, #3B2F43 95.73%);
 border-radius: 0 0 120px 120px;
 overflow: scroll;
-
 margin: 0 auto;
 display: grid;
 grid-gap: 1rem;
-
-}
 
 }
 
@@ -100,9 +76,10 @@ grid-gap: 1rem;
   .bag-image.active{
   	position: absolute; 
   	width: 50%;
-  	z-index: 100;}
+  	z-index: 100;
+   top: 30%;}
   .bag.container.active{
-  	height:90%;
+
   }
 }
 
@@ -144,7 +121,8 @@ grid-gap: 1rem;
 
 .bag-container:hover{
 	cursor: pointer;
-    background-color:#BBA9D8;
+    background-color:#967bb6;
+    border-color: #BBA9D8;
     transition: all 0.3s ease-out;
 
 }
@@ -193,13 +171,12 @@ h1.active{
   	margin-left: auto;
   	margin-right: auto;
   	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.25);
-  	z-index: 1000;
+  	z-index: 100000000000;
   	transition: all 0.3s ease-out;
 }
 
 .bag-container.active:hover{
 	background: #BBA9D8;
 }
-
 
 
